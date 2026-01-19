@@ -1,0 +1,43 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+
+  "logo": "~/.config/fastfetch/ascii.txt",
+  
+  "modules": [
+    "title",
+
+    "separator",
+  {
+      "type": "custom",  
+      "format": " \u001b[31m  \u001b[32m  \u001b[33m  \u001b[36m  \u001b[34m  \u001b[35m  \u001b[37m  \u001b[30m "         
+   },
+
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "icons",
+    "cursor",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "localip",
+    "battery",
+    "poweradapter",
+    "locale",
+    "bios",
+    "colors"
+  ]
+}
