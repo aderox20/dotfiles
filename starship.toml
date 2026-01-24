@@ -2,6 +2,11 @@
 add_newline = false
 command_timeout = 500
 
+palette = "catppuccin_mocha"
+
+[palettes.catppuccin_mocha]
+lavender = "#b4befe"
+
 [character]
 success_symbol = "[➜](bold bright-blue)"
 error_symbol = "[✗](bold red)"
@@ -18,7 +23,7 @@ home_symbol = "~"
 [username]
 style_user = "bold cyan"
 style_root = "bold red"
-format = "[ ](bold bright-blue)[$user](bold cyan)@"
+format = "[󰣇 ](bold bright-blue)[$user](bold cyan)@"
 disabled = false
 show_always = true
 
