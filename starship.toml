@@ -1,0 +1,68 @@
+# === Arch Linux / Cyber Blue Starship Theme ===
+add_newline = false
+command_timeout = 500
+
+[character]
+success_symbol = "[➜](bold bright-blue)"
+error_symbol = "[✗](bold red)"
+vicmd_symbol = "[](bold cyan)"
+format = "$symbol "
+
+[directory]
+style = "bold bright-blue"
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = " "
+home_symbol = "~"
+
+[username]
+style_user = "bold cyan"
+style_root = "bold red"
+format = "[ ](bold bright-blue)[$user](bold cyan)@"
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+style = "bold bright-blue"
+format = "[$hostname]($style) "
+trim_at = "."
+disabled = false
+
+[git_branch]
+symbol = " "
+style = "bold bright-blue"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "bold bright-cyan"
+format = "[$all_status$ahead_behind]($style)"
+
+[cmd_duration]
+min_time = 500
+format = "[$duration](dim white) "
+
+[battery]
+full_symbol = " "
+charging_symbol = " "
+discharging_symbol = " "
+unknown_symbol = " "
+format = "[$symbol$percentage](bold blue) "
+disabled = false
+
+[time]
+disabled = false
+format = "🕒 [$time](bold bright-blue) "
+time_format = "%H:%M"
+
+# Optional modules you can enable later
+[docker_context]
+symbol = " "
+style = "bold cyan"
+format = "[$symbol$context]($style) "
+
+[package]
+symbol = "📦 "
+style = "bold cyan"
+format = "[$symbol$version]($style) "
+
