@@ -1,0 +1,17 @@
+@import url('~/.config/waybar/style.css');
+
+#custom-Audio-tab {
+    padding: 0 10px;
+}
+
+#custom-Audio-tab.playing {
+    color: #a0d6b4;
+}
+
+#custom-Audio-tab.paused {
+    color: #ffcc66;
+}
+
+#custom-Audio-tab.stopped {
+    color: #888;
+}

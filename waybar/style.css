@@ -1,0 +1,114 @@
+* {
+  border: none;
+  font-family: "CaskaydiaCove Nerd Font Propo", "Symbols Nerd Font Mono", monospace;
+  font-size: 12px;
+  min-height: 0;
+}
+
+tooltip {
+  opacity: 1;
+}
+
+window#waybar {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+}
+
+#waybar > box {
+  border-radius: 4px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  margin: 0px 8px 3px 8px;
+  background-color: rgba(20, 20, 20, 0.9);
+  box-shadow: 1px 1px 3px 1px #101010;
+}
+
+#workspaces {
+  margin: 0;
+  padding: 1px 2px 1px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 0.25px solid rgba(255, 255, 255, 1);
+  opacity: 0.95;
+}
+
+#workspaces button {
+  padding: 0px 5px;
+  margin: 1px 2px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #000000;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.75;
+  font-size: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+}
+
+#workspaces button.active {
+  color: #ffffff;
+  background-color: rgba(20, 20, 20, 0.9);
+  border-radius: 2px;
+  min-width: 30px;
+  opacity: 1.0;
+  transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.empty {
+  opacity: 0.2;
+}
+
+#workspaces button.empty.active {
+  color: #ffffff;
+  opacity: 1.0;
+  border-radius: 2px;
+  min-width: 30px;
+}
+
+#workspaces button:hover {
+  color: #ffffff;
+  background: rgba(20, 20, 20, 0.9);
+  border-radius: 2px;
+  min-width: 30px;
+  opacity: 0.9;
+}
+
+#hyprland-window,
+#window,
+#tray,
+#cpu,
+#memory,
+#battery,
+#network,
+#pulseaudio,
+#backlight,
+#clock,
+#idle_inhibitor,
+#custom-volume-music {
+  min-width: 12px;
+  margin: 1px 1px 1px 1px;
+  padding: 0 4px;
+}
+
+#custom-volume-music.music-playing {
+  color: #a6e3a1;
+}
+
+#battery.warning {
+  color: #c95d0f;
+}
+
+#battery.critical:not(.charging) {
+  background-color: transparent;
+  color: #e6d8ba;
+  animation-name: blink2;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink2 {
+  to {
+    background-color: transparent;
+    color: #f53c3c;
+  }
+}
